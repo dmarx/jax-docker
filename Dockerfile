@@ -19,5 +19,6 @@ ln -sf /usr/bin/pip3 /usr/bin/pip
 # install dependencies via pip
 RUN pip install --no-cache-dir --upgrade numpy scipy six wheel matplotlib pandas
 RUN pip install --no-cache-dir jaxlib==${JAXLIB_VERSION}+cuda112 -f https://storage.googleapis.com/jax-releases/jax_releases.html
+RUN pip install --no-cache-dir jax==0.2.17
+RUN pip install --no-cache-dir --upgrade trax flax dm-haiku optax chex jraph
 RUN pip install --no-cache-dir --upgrade tensorflow 
-RUN pip install --no-cache-dir --upgrade jax trax flax dm-haiku optax chex jraph
