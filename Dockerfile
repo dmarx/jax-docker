@@ -24,4 +24,4 @@ RUN pip install --no-cache-dir --upgrade trax flax dm-haiku optax chex jraph
 RUN pip install --no-cache-dir --upgrade tensorflow 
 
 # install assorted utilities
-RUN apt install git-all
+RUN apt install git
