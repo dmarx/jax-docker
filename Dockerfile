@@ -22,3 +22,6 @@ RUN pip install --no-cache-dir jaxlib==${JAXLIB_VERSION}+cuda112 -f https://stor
 RUN pip install --no-cache-dir jax==0.2.17
 RUN pip install --no-cache-dir --upgrade trax flax dm-haiku optax chex jraph
 RUN pip install --no-cache-dir --upgrade tensorflow 
+
+# install assorted utilities
+RUN apt install git-all
