@@ -6,8 +6,9 @@ ENV IMG_NAME=11.2.2-cudnn8-devel-ubuntu20.04 \
     # declare what jaxlib tag to use
     # if a CI/CD system is expected to pass in these arguments
     # the dockerfile should be modified accordingly
+    # https://storage.googleapis.com/jax-releases/jax_releases.html
     # JAXLIB_VERSION=0.1.62
-    JAXLIB_VERSION=0.1.73
+    JAXLIB_VERSION=0.1.65
 
 # install python3-pip
 RUN apt update && apt install python3-pip -y
